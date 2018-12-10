@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projet : Thalassa</title>
+        <meta charset="utf-8"/>
+        <link type="text/CSS" rel="stylesheet" href="style.css">
+
+        <script type="text/javascript" src="classes.js"></script>
+        <script type="text/javascript" src="canvas.js"></script>
+        <script type="text/javascript" src="buttons.js"></script>
+        <script type="text/javascript" src="window.js"></script>
+        <script type="text/javascript" src="morphing.js"></script>
+    </head>
+
+    <body>
+        <h1>THALASSA</h1>
+
+        <div id="import">Import shades</div>
+
+        <table> 
+            <tbody id="thalassa">
+                <tr>
+                    <td rowspan="3" colspan="2">
+                        <canvas class="in" width="400" height="300"></canvas>
+                    </td>
+                    <td><button class="1">Clear</button></td>
+                    <td>
+                        <button class="1">Vert. Sym.</button>
+                        <button class="1">Horiz. Sym.</button>
+                    </td>
+                    <td id="out" rowspan="6">
+                        <canvas class="out" width="400", height="640"></canvas>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button class="1">Undo</button></td>
+                    <td><button class="1">Set Axis</button></td>
+                </tr>
+                <tr>
+                    <td><button class="1">Redo</button></td>
+                    <td><button class="1">Axis Sym.</button></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3" colspan="2">
+                        <canvas class="in" width="400" height="300"></canvas>
+                    </td>
+                    <td><button class="2">Clear</button></td>
+                    <td>
+                        <button class="2">Vert. Sym.</button>
+                        <button class="2">Horiz. Sym.</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button class="2">Undo</button></td>
+                    <td><button class="2">Set Axis</button></td>
+                </tr>
+                <tr>
+                    <td><button class="2">Redo</button></td>
+                    <td><button class="2">Axis Sym.</button></td>
+                </tr>
+                <tr id="bef">
+                    <td><button id="add">+</button></td>
+                    <td><button id="del">-</button></td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+    </body>
+</html>

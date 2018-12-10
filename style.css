@@ -1,0 +1,105 @@
+body
+{
+    background-color: rgb(250, 250, 250);
+    color: black;
+}
+
+h1
+{
+    color: green;
+    text-align: center;
+    margin: auto;
+    margin-top: 1cm;
+    padding-top: 20px;
+    background-color: white;
+    width: 300px;
+    height: 60px;
+    border: 4px solid green;
+    border-radius: 40px;
+}
+
+/* zone d'import */
+
+#import
+{
+    font-size: 25px;
+    text-align: center;
+    width: 10cm;
+    margin: auto;
+    margin-top: 2cm;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+    background-image: linear-gradient(to right, rgb(255, 200, 100), rgb(255,230,100));
+    border: 10px groove rgb(163, 76, 0);
+    border-radius: 5px;
+}
+
+
+
+/* zone principale */
+
+.in
+{
+    border: 5px outset black;
+    background-image: linear-gradient(white, rgb(230,230,230));
+}
+
+.out
+{
+    border: 5px inset grey;
+    background-image: linear-gradient(rgb(230,230,230), white);
+    margin-left: 30px;
+}
+
+.out:hover
+{
+    background-image: none;
+    background-color: rgb(230, 230, 230);
+}
+
+canvas
+{
+    margin: 5px;
+}
+
+table
+{
+    margin: auto;
+    margin-top: 1cm;
+    border: 15px groove rgb(163, 76, 0);
+    border-radius: 5px;
+
+    background-image: linear-gradient(to right, rgb(255, 200, 100), rgb(255,230,100));
+}
+
+button:not(#add):not(#del)
+{
+    font-weight: bold;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-shadow: 1px 1px yellow;
+    background-image: linear-gradient(white, LightGrey);
+    
+    border-color: blue;
+    width: 40px;
+    height: 70px;
+}
+
+button:hover
+{
+    color: orange;
+}
+
+#add, #del
+{
+    width: 55px;
+    height: 50px;
+    margin-left: 75px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(white, grey);
+    font-size: 30px;
+    color: black;
+    border-style: solid;
+    border-radius: 50%;
+}
