@@ -47,7 +47,7 @@ window.onload = function() {
     // Assigne l'événement au canvas de sortie
     
     canOut.addEventListener("click", function() { 
-        if (model.atLeastOne) {
+        if (!model.morphing && model.atLeastOne) {
             morphing(model);
         }
     }, false);
