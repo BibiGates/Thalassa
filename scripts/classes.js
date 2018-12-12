@@ -34,6 +34,10 @@ Point.prototype.clone = function() {
     return new Point(this.x, this.y);
 };
 
+Point.prototype.isEqual = function(p) {
+    return (this.x === p.x && this.y === p.y);
+}
+
 function Segment(p1, p2, c = "rgb(0, 0, 0)") {
     Object.defineProperty(this, "p1",
         {

@@ -100,7 +100,7 @@ function axisSymTab(tab, axis) {
 }
 
 function axisSym(can) {
-    if (can.axis.length === 2) {
+    if (can.axis.length === 2 && !can.axis[0].isEqual(can.axis[1])) {
         var seg = new Segment(can.axis[0], can.axis[1], "rgba(255,0,0,0.5)");
 
         can.tab = axisSymTab(can.tab, seg);
@@ -143,6 +143,7 @@ function createFirstTr(texts, model) {
 
     tr.appendChild(createBtnTd(texts[0], model.length));
     td = createBtnTd(texts[1], model.length);
+    td.appendChild(document.createElement("br"));
     td.appendChild(createBtnTd(texts[2], model.length).firstChild);
     tr.appendChild(td);
 
